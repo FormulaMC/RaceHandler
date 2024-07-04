@@ -18,7 +18,7 @@ class RaceCommand(plugin: JavaPlugin) {
                     val animation = !args.getOrNull(1).contentEquals("animation:off")
 
                     RaceHandler(laps, players).start(animation) { game ->
-                        game.winner.let { winner ->
+                        game.winner?.let { winner ->
                             game.initialPlayer.forEach {
                                 it.sendMessage("======== Race Results ========")
                                 it.sendMessage("Winner: ${winner.name} (${game.finishTime[winner]})")
