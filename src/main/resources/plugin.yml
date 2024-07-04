@@ -1,0 +1,14 @@
+main: de.c4vxl.Racing
+version: 1.0-RV-B1
+api-version: 1.16         # Plugin is for 1.16+
+name: Racing
+description: Racing Logic
+
+commands:
+  race:
+    description: Start a vehicle race
+    aliases:
+      - r
+
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:2.0.0
